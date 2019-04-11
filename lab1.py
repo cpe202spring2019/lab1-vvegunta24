@@ -38,7 +38,7 @@ def bin_search(target, low, high, int_list):  # must use recursion
       return None
    if low == high and high == (len(int_list)-1) and int_list[len(int_list)-1] != target: #if target is larger than largest element returns None
       return None
-   if int_list == []: # returns [] if [] is passed - Hail mary attempt to increase grade
+   if int_list == []: # returns None if [] is passed 
       return None
    if int_list[((low+high)//2)] == target: # if target is found, returns index
        return ((low+high)//2)

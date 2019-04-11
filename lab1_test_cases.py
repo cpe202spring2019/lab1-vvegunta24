@@ -52,6 +52,7 @@ class TestLab1(unittest.TestCase):
         self.assertEqual(bin_search(1,0,5,[1,1,1,1,1,1]),2) # tests list with same values
         self.assertEqual(bin_search(-1,0,5,[0,1,2,3,4,5]),None)
         self.assertEqual(bin_search(200,0,5,[0,1,2,3,4,5]),None)
+        self.assertIsNone(bin_search(0,0,1,[])) # checks when empty list is passed
 
 if __name__ == "__main__":
         unittest.main()
